@@ -103,3 +103,7 @@ guint32
 fu_memread_uint32(const guint8 *buf, FuEndianType endian);
 guint64
 fu_memread_uint64(const guint8 *buf, FuEndianType endian);
+gboolean
+fu_memchk_read(gsize bufsz, gsize offset, gsize n, GError **error);
+gboolean
+fu_memchk_write(gsize bufsz, gsize offset, gsize n, GError **error);
